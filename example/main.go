@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 
-	"gitlab.landui.cn/gomod/xlog"
+	"github.com/AlexiaChen/xlog"
 )
 
 func main() {
