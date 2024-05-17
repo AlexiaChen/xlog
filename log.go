@@ -178,6 +178,8 @@ func (c *LogCore) Error(msg string, err error) *LogCore {
 	if c.AdditionalInfo == nil {
 		logger.Error(
 			msg,
+			zap.Any("stack", c.Stack),
+			zap.Any("err", c.Err),
 			zap.Any("project_name", name),
 			zap.Any("log_path", path))
 	} else {
